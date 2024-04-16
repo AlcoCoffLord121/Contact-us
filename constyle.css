@@ -8,8 +8,19 @@ body {
     font-family: "Bungee Spice", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background: linear-gradient(#ffdad5, #fff7f9);
+    background: rgb(76, 141, 245);
 
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0);
+    height: 150px;
+}
+
+.logo {
+    height: 200px;
+    position: absolute;
+    margin-left: 100px
 }
 
 .contact-container {
@@ -17,33 +28,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+
 }
 
-.contact-left {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 20px;
-    width: 50%;
-}
-
-.contact-left-title h2 {
-    font-weight: 600;
-    color: #a363aa;
+h2 {
+    font-family: "Caveat", cursive, "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    text-align: center;
     font-size: 40px;
-    margin-bottom: 5px;
-}
-
-.contact-left-title hr {
-    border: none;
-    width: 120px;
-    height: 5px;
-    background-color: #fd8b00;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    margin-top: -150px;
 }
 
 .contact-inputs {
+    margin-top: 40px;
+    display: flex;
+    margin-bottom: 40px;
     width: 400px;
     height: 50px;
     border: none;
@@ -66,10 +65,11 @@ body {
 }
 
 .contact-inputs::placeholder {
-    color: #a9a9a9;
+    color: #25549c;
 }
 
 .contact-left button {
+    margin-left: 130px;
     display: flex;
     align-items: center;
     padding: 15px 30px;
@@ -78,17 +78,12 @@ body {
     gap: 10px;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(270deg, #ff994f, #fa6d86);
+    background: rgb(0, 15, 185);
     cursor: pointer;
 }
 
 contact-left button img {
     height: 15px;
-
-}
-
-.contact-right img {
-    width: 500px;
 }
 
 @media (max-width: 800px) {
@@ -96,20 +91,16 @@ contact-left button img {
         width: 80vw;
     }
 
-    .contact-right {
+    .logo {
         display: none;
     }
 }
 
-.contact-right {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.Cp {
+    padding: 500px;
+    z-index: 400px;
 }
 
-.contact-right img {
-    max-width: 100%;
-    height: auto;
-    max-height: 100vh;
+.team {
+    font-family: 'Times New Roman', Times, serif;
 }
